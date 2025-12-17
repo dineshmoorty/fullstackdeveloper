@@ -1,0 +1,89 @@
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins' , sans-serif;
+}
+
+/* Navigation Bar Styles */
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background: #111;
+  color: white;
+  padding: 20px;
+  transition: 0.3s ease;
+  z-index: 1050;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-nav.active {
+  right: 0;
+}
+
+/* Main Styles */
+
+.bg-image {
+  background: url("/Assets/Images/Background.png") no-repeat center center;
+  background-size: cover;
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark overlay layer */
+.bg-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* adjust darkness */
+  z-index: 1;
+}
+
+/* Text content */
+.overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.overlay h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+.icons_overlay {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1em;
+}
+
+.icons_overlay a{
+  color:white;
+}
+
+.logo {
+  border-radius: 70%;
+  /* width: auto; */
+}
