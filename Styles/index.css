@@ -86,5 +86,30 @@ body {
 .logo {
   border-radius: 70%;
   /* width: auto; */
+}
 
+.icon {
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: lightgreen;
+  color: white;
+}
+
+.icon:hover {
+  background-color: #ffff;
+  color: lightgreen;
+  transition: all 0.15ms;
+}
+a {
+  text-decoration: unset;
+  color: white;
+}
+.learn:hover {
+  color: green;
+  transform:translateX(15px);
+  transition: all 0.25s;
+}
+.skill_icons img {
+  width: 50px;
 }
