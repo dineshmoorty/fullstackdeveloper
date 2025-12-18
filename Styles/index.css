@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Poppins' , sans-serif;
+  overflow-x: hidden;
 }
 
 /* Navigation Bar Styles */
@@ -112,4 +113,5 @@ a {
 }
 .skill_icons img {
   width: 50px;
+
 }
