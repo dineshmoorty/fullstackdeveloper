@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DineshMoorthi_Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./Styles/index.css">
 </head>
 <body>
@@ -48,7 +49,7 @@
 
   <main class="">
 
-    <section class="mb-5 ">
+    <section class="mb-5">
       <div class="bg-image">
         <div class="overlay">
           <h1>Dinesh Moorthi</h1>
@@ -66,7 +67,7 @@
     </section>
 
     <!-- About -->
-    <section class="container mt-5 mb-5" id="about">
+    <section class="container mt-5 mb-5"id="about">
 
       <div class="d-md-flex gap-5 justify-content-evenly align-items-center">
         <div class="">
@@ -83,19 +84,19 @@
 
     <section class="mb-5 bg-black text-white">
       <div class="d-md-flex gap-4 p-2 pb-3 pt-3  justify-content-evenly align-items-center">
-          <div class="d-flex flex-column align-items-center p-2">
+          <div class="d-flex flex-column align-items-center p-2" data-aos="fade-up" data-duration="2000" >
             <i class="icon bi bi-lightning-charge-fill fs-4"></i>
             <h3>Skills</h3>
             <p class="text-center mt-3 mb-3">Learn about my skills in programming, find info on my language knowledge and more.</p>
             <a href="#skills" class="learn mb-4">Learn More <span class="px-2 py-2"><i class="bi bi-arrow-right-circle"></i></span> </a>
           </div>
-          <div class="d-flex flex-column align-items-center p-2">
+          <div class="d-flex flex-column align-items-center p-2" data-aos="fade-right" data-duration="2000" >
             <i class="icon bi bi-star-fill fs-4"></i>
             <h3>Experience</h3>
             <p class="text-center mt-3 mb-3">Get to know the timeline of my education and  find out  more about  my working experience.</p>
             <a href="" class="learn mb-4">Learn More <span class="px-2 py-2"><i class="bi bi-arrow-right-circle"></i></span> </a>
           </div>
-          <div class="d-flex flex-column align-items-center p-2">
+          <div class="d-flex flex-column align-items-center p-2" data-aos="fade-down" data-duration="2000" >
             <i class="icon bi bi-suitcase-lg-fill fs-4"></i>
             <h3>Portfolio</h3>
             <p class="text-center mt-3 mb-3">My portfolio is my biggest  pride. Check my previous works and get to know my skills  better.</p>
@@ -110,7 +111,7 @@
       <div class="row align-items-center">
         <div class="skill_icons col-12 col-md-3">
           <div class="row align-items-center justify-content-center">
-            <h3 class="text-center mt-3 mb-4">FrontEnd Tools</h3>
+            <h5 class="text-center mt-3 mb-4">FrontEnd Tools</h5>
             <div class="col-3 col-md-6 d-flex flex-column align-items-center gap-2">
               <img src="./Assets/icons/html.svg" alt="html_icon">
               <h6>HTML</h6>
@@ -135,7 +136,7 @@
         </div>
         <div class="skill_icons col-12 col-md-3">
           <div class="row align-items-center justify-content-center">
-            <h3 class="text-center mt-3 mb-4">Backend Tools</h3>
+            <h5 class="text-center mt-3 mb-4">Backend Tools</h5>
             <div class="col-3 col-md-6 d-flex flex-column align-items-center gap-2">
               <img src="./Assets/icons/java.svg" alt="">
               <h6>Java</h6>
@@ -164,5 +165,10 @@
 
   <script src="./Scripts/index.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // AOS
+    AOS.init();
+  </script>
 </body>
 </html>
