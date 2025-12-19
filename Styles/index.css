@@ -114,6 +114,42 @@ a {
 }
 .skill_icons img {
   width: 50px;
-
+}
+.img-fluid {
+  border-radius: 15px;
 }
 
+/* timeline wrapper */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+/* vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #dee2e6; /* bootstrap light gray */
+}
+
+/* each experience block */
+.timeline > div {
+  position: relative;
+  padding-left: 30px;
+}
+
+/* dot for each experience */
+.timeline > div::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  background-color: #0d6efd; /* bootstrap primary */
+  border-radius: 50%;
+}
