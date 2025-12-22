@@ -11,3 +11,4 @@ document.querySelectorAll("#mobileNav a").forEach(link => {
     mobileNav.classList.remove("active");
   });
 });
+
