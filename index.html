@@ -291,8 +291,8 @@
             <br> Or call me at +1-2738-3840-234
             <br> contact@henrymcdcv.com
           </p>
-          <p class="text-md-left">Find Me On</p>
-          <div class="d-flex gap-3">
+          <p class="text-md-left find">Find Me On</p>
+          <div class="d-flex gap-3 contact_icons">
             <a href="" class="btn" style="background-color: black; color: white;"  data-toggle="tooltip" data-placement="top" title="Behance"><i class="bi bi-behance" ></i></a>
             <a href=""class="btn" style="background-color: palevioletred;" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="bi bi-instagram" ></i></a>
             <a href=""class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Whatsapp"><i class="bi bi-whatsapp" ></i></a>
@@ -300,24 +300,25 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 ">
           <form action="" method="post">
             <div class="form-input mt-2 mb-2">
-              <label for="" class="mb-2 mt-2">Enter Name</label>
-              <input type="text" class="form-control" />
+              <label for="" class="mb-2 mt-2">Enter Name <span class="text-danger fs-6">*</span></label>
+              <input type="text" class="form-control" id="input" placeholder="Enter Your Full Name" required/>
             </div>
             <div class="form-input mt-2 mb-2">
-              <label for="" class="mb-2 mt-2">Enter Email</label>
-              <input type="email" class="form-control" />
+              <label for="" class="mb-2 mt-2">Enter Email <span class="text-danger fs-6">*</span></label>
+              <input type="email" class="form-control email" id="input" placeholder="Enter your Email" required/>
             </div>
             <div class="form-input mt-2 mb-2">
-              <label for="" class="mb-2 mt-2">Enter Mobile Number</label>
-              <input type="number" class="form-control" />
+              <label for="" class="mb-2 mt-2">Enter Mobile Number <span class="text-danger fs-6">*</span></label>
+              <input type="number" class="form-control mobile" id="input" placeholder="Enter Your Mobile Number" required />
             </div>
             <div class="form-input mt-2 mb-2">
-              <label for="" class="mb-2 mt-2">Enter Your Querry</label>
-              <textarea class="form-control" placeholder="Type Your Message Here"></textarea>
+              <label for="" class="mb-2 mt-2">Enter Your Querry <span class="text-danger fs-6">*</span></label>
+              <textarea class="form-control" id="input" placeholder="Type Your Message Here" required></textarea>
             </div>
+            <button class="btn btn-outline-primary float-end mt-2">Send <i class="bi bi-send"></i></button>
           </form>
         </div>
       </div>

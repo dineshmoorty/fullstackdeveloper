@@ -154,3 +154,13 @@ a {
   border-radius: 50%;
 }
 
+input[type='number']::-webkit-inner-spin-button,::-webkit-outer-spin-button {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .contact_icons , .find {
+    display: flex;
+    justify-content: center;
+  }  
+}
